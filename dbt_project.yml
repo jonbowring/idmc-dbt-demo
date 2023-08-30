@@ -33,5 +33,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   idmc_dbt_demo:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    enrich:
       +materialized: view
+      +schema: enrich
+    enterprise:
+      +materialized: view
+      +schema: enterprise

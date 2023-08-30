@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: sap_bank_fraud
+    description: "Report for flagged employee bank fraud"
+
+  - name: sap_rev_etl
+    description: "Cleansed data to load into SAP and immediately prevent fraudulent transactions"

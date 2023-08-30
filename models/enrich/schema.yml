@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: sap_employees
+    description: "Employee master data"
+    columns:
+      - name: lifnr
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: sap_suppliers
+    description: "Supplier master data"
+    columns:
+      - name: lifnr
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: sap_bank
+    description: "Bank master data"
+
+  - name: sap_employees_bank
+    description: "Employee bank data"
+
+  - name: sap_suppliers_bank
+    description: "Supplier bank data"
